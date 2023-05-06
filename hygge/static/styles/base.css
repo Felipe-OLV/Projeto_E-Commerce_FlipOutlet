@@ -1,0 +1,112 @@
+.container-fluid{
+    padding: 0;
+}
+
+/* Navbar */
+
+.navbar{
+    border-bottom: black;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav{
+    margin: auto;
+}
+
+.navbar-brand{
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:'Bebas Neue', sans-serif;
+    padding-left: 30px;
+}
+
+.navbar-light .navbar-nav a.nav-link{
+    color: #000000;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+.navbar-light .navbar-nav a.nav-link:hover{
+    background-color: #9292921e;
+    color: #000000;
+    border-radius: 15%;
+}
+
+body {
+    background-color: #5c493e;
+}
+.container-fluid > nav > h1{
+    align-self: center;
+    align-items: center;
+    font-family: 'Crack', sans-serif;
+    font-size: 80px;
+    padding-right: 30px;
+}
+footer{
+    background-color: white;
+    height: 100px;
+    margin-top: 310px;
+    border-top: black;
+    box-shadow: 4px 2px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.index-item{
+    box-shadow: 5px 5px 6px 6px black;
+    width: 400px;
+    height: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img-layout{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.titulo-item{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 60px;
+    line-height: 50px;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.titulo-item:hover{
+    color: rgb(177, 177, 177);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 60px;
+    line-height: 50px;
+    text-decoration: underline;
+    margin: 5px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ItemPrice{
+    color: white;
+    box-sizing: border-box;
+    line-height: 10px;
+    font-weight: bolder;
+    font-size: 25px
+}
