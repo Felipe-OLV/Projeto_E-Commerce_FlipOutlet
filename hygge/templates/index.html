@@ -8,16 +8,18 @@
         {% if item.is_available == False %}
             <p>funsionou</p>
         {% elif item.is_available %}
+        <div class="grid-index">   
             <div class="index-item">
                 <a href="{{item.id}}">
                 <img  src="{{item.image.url}}" class="img-layout">
                 </a>
-                <a class="titulo-item">
+                <a href="{{item.id}}" class="titulo-item">
                     {{item.name}}
                 </a>
                 <br>
                 <span class="ItemPrice">R$ {{item.price}}</span>
             </div>
+        </div>    
         {% endif %}
     {% endfor %}
 </section>

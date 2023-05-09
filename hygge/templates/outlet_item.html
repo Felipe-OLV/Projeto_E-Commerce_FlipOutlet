@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
-{% block title %}{{item.name}}{% endblock %}
+{% block title %}{{clothing_item.name}}{% endblock %}
 {% block content %}
 
-<h1>{{ clothing_item.title }}</h1>
-<img src="{{ clothing_item.image.url }}" alt="{{ clothing_item.title }}">
-<p>{{ clothing_item.description }}</p>
+<div class="product-detail">
+    <div class="img-cont" >
+        <img src="{{ clothing_item.image.url }}" alt="{{ clothing_item.title }}">
+    </div>    
+        <div class="text-desc">
+            <br>
+            <h3>Descrição:</h3>
+            <p>{{ clothing_item.description }}</p>
+            <div class="priceall">
+                <h1>{{ clothing_item.name }}</h1>
+                <h2>R$ {{ clothing_item.price }}</h2>
+                <button class="btn">Comprar</button>
+                <button class="btn" id="btn-cart">Adicionar ao carrinho</button>
+            </div>
+        </div>               
+</div>
 
 {% endblock %}
